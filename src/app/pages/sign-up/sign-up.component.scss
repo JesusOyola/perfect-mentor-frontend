@@ -1,0 +1,138 @@
+$dark-gray: #444444;
+$white: #ffffff;
+
+.section-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rectangle {
+  width: 55rem;
+  height: 32rem;
+  top: 16rem;
+  left: 17rem;
+  border-radius: 40px;
+  border: 4px solid $dark-gray;
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  width: 19rem;
+  color: $dark-gray;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+#m-letter {
+  color: $white;
+}
+
+.btn {
+  border-radius: 40px;
+}
+
+.sign-up {
+  margin-top: 2rem;
+  width: 20rem;
+  background-color: #444444;
+  & span {
+    color: #ffffff;
+  }
+}
+
+.saly-2 {
+  height: 40rem;
+  position: absolute;
+  z-index: 3;
+  margin-right: 2rem;
+}
+.saly-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.doodles {
+  height: 10rem;
+  position: absolute;
+  z-index: 3;
+}
+
+.doodle-group {
+  top: 11rem;
+  left: 16rem;
+  height: 8rem;
+}
+
+.doodle-register-1 {
+  left: 38rem;
+  top: 24rem;
+}
+
+.doodle-register-2 {
+  left: 18rem;
+  height: 13rem;
+  top: 35rem;
+}
+
+.doodle-register-3 {
+  top: 5rem;
+  left: 32rem;
+  height: 20rem;
+}
+
+.line-rgister {
+  top: 18.5rem;
+  left: 46rem;
+  height: 25rem;
+  border: 0.5px solid $dark-gray;
+}
+
+.title-container {
+  margin-left: 22rem;
+}
+
+.form-control {
+  margin-bottom: 1rem;
+  width: 20rem;
+  border-radius: 40px;
+  border: 1px solid $dark-gray;
+  height: 3rem;
+  background-color: #bfd732;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.icon {
+  position: absolute;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+input::placeholder {
+  padding-left: 2rem !important;
+  position: absolute;
+  background: #bfd732 !important;
+}
+input::content {
+  text-align: center;
+}
+
+.subtitle {
+  width: 19rem;
+  color: $dark-gray;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
