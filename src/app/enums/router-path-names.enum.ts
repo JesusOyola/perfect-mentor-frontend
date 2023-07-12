@@ -3,7 +3,7 @@ export const enum RouterPathNames {
   profile = 'profile',
   reports = 'reports',
   signIn = 'sign-in',
-  signUp = 'signUp',
+  signUp = 'sign-up',
   stadistics = 'stadistics',
   users = 'users',
   empty = '',
