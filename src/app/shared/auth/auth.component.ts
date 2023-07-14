@@ -12,6 +12,7 @@ import { ToastrService } from 'ngx-toastr';
 export class AuthComponent implements OnInit {
   signUp: boolean = false;
   signIn: boolean = false;
+  pepe: boolean = false;
 
   accessForm!: FormGroup;
 
@@ -25,6 +26,7 @@ export class AuthComponent implements OnInit {
   ngOnInit(): void {
     this.signUpPath();
     this.accessForm = this.initForm();
+    console.log(this.accessForm.controls['email']);
   }
 
   signUpPath() {
@@ -69,18 +71,24 @@ export class AuthComponent implements OnInit {
           'Attention!'
         );
       }
-    }else{
-     
+    }
+    if (this.router.url === '/sign-in') {
       this.AuthService.signIn(this.accessForm.value).subscribe({
-        next:(token)=>{
-          console.log(token)
-          localStorage.setItem('token',token)
-           this.toastr.success(
+        next: (token) => {
+          localStorage.setItem('token', token);
+          this.toastr.success(
             `User ${this.accessForm.controls['email'].value} logeado`,
             'User logged'
-          ); 
-        }
-      })
+          );
+          this.router.navigate(['/profile']);
+        },
+        error: (err) => {
+          this.toastr.error(
+            `Verify that your email and password are correct.`,
+            'Invalid Credentials'
+          );
+        },
+      });
     }
   }
 }
