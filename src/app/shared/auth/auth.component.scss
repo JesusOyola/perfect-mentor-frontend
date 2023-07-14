@@ -96,7 +96,7 @@ $white: #ffffff;
 }
 
 .form-control {
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   width: 20rem;
   border-radius: 40px;
   border: 1px solid $dark-gray;
@@ -112,8 +112,9 @@ form {
 
 .icon-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   position: relative;
+  margin-bottom: 1rem;
 }
 .icon {
   position: absolute;
@@ -147,3 +148,4 @@ input::content {
   font-size: 1rem;
   margin-right: 6rem;
 }
+

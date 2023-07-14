@@ -48,7 +48,7 @@
               alt="dotline"
             />
 
-            <p class="hi-name" *ngIf="signIn">Hi, name</p>
+            <!-- <p class="hi-name" *ngIf="signIn">Hi, name</p> -->
           </article>
           <form [formGroup]="accessForm" (ngSubmit)="onSubmit()">
             <div *ngIf="signUp" class="icon-container">
@@ -58,11 +58,13 @@
                 placeholder="username"
                 formControlName="username"
               />
+
               <img
                 class="icon"
                 src="../../../assets/images/icons/user.png"
                 alt=""
               />
+              
             </div>
             <div class="icon-container">
               <input
@@ -71,12 +73,16 @@
                 placeholder="email"
                 formControlName="email"
               />
+
               <img
                 class="icon"
                 src="../../../assets/images/icons/email.png"
                 alt=""
               />
+               
             </div>
+            
+            
             <div *ngIf="signUp" class="icon-container">
               <input
                 type="text"
@@ -89,6 +95,7 @@
                 src="../../../assets/images/icons/user.png"
                 alt=""
               />
+              
             </div>
             <div class="icon-container">
               <input
@@ -102,12 +109,17 @@
                 src="../../../assets/images/icons/password.png"
                 alt=""
               />
+            
             </div>
 
             <p class="message-forgot" *ngIf="signIn">
               Do you forgot your password?
             </p>
-            <button type="submit" class="btn btn-lg sign-up" [disabled]="accessForm.invalid">
+            <button
+              type="submit"
+              class="btn btn-lg sign-up"
+              [disabled]="accessForm.invalid"
+            >
               <span *ngIf="signUp">Sign up</span>
               <span *ngIf="signIn">Sign in</span>
             </button>
