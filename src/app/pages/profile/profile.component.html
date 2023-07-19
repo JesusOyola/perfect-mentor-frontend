@@ -1,1 +1,125 @@
-<p>profile works!</p>
+<section>
+  <article class="d-flex flex-column sidebar-container p-3 text-bg-blue">
+    <h1 class="hebbo-font title text-start">
+      THE PERFECT <a id="m-letter">M</a>ENTOR
+    </h1>
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <div class="profile-icon-container">
+          <img
+            class="icon-profile"
+            src="../../../assets/images/icons/profile-users.png"
+            alt=""
+          />
+          <a routerLink="/users" class="nav-link" aria-current="page">
+            Users
+          </a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <div class="profile-icon-container">
+          <img
+            class="icon-profile"
+            src="../../../assets/images/icons/profile-stadistics.png"
+            alt=""
+          />
+          <a routerLink="/stadistics" class="nav-link"> Stadistics </a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="profile-icon-container">
+          <img
+            class="icon-profile"
+            src="../../../assets/images/icons/profile-reports.png"
+            alt=""
+          />
+          <a routerLink="/reports" class="nav-link"> Reports </a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="profile-icon-container">
+          <img
+            class="icon-profile"
+            src="../../../assets/images/icons/profile.png"
+            alt=""
+          />
+          <a routerLink="/profile" class="nav-link"> Profile </a>
+        </div>
+      </li>
+      <li class="log-out">
+        <div class="profile-icon-container">
+          <img
+            class="icon-profile"
+            src="../../../assets/images/icons/logout.png"
+            alt=""
+          />
+          <a routerLink="/sign-in" class="nav-link" (click)="logout()"> Log out </a>
+        </div>
+      </li>
+    </ul>
+  </article>
+  <article class="data-container">
+    <div class="square-container">
+      <h1>Profile</h1>
+      <img
+        class="mask-group doodles-profile"
+        src="../../../assets/images/profile/Mask group.png"
+        alt=""
+      />
+      <img
+        class="saly-30 doodles-profile"
+        src="../../../assets/images/profile/Saly-30.png"
+        alt=""
+      />
+      <img
+        class="profile-register doodles-profile"
+        src="../../../assets/images/register/doodle-register-2.png"
+        alt=""
+      />
+      <img
+        class="profile-onboarding doodles-profile"
+        src="../../../assets/images/on-boarding/doodle-onboarding-2.png"
+        alt=""
+      />
+      <img
+        class="avatar doodles-profile"
+        src="../../../assets/images/profile/avatar.png"
+        alt=""
+      />
+      <div class="card-profile">
+        <form [formGroup]="profileForm">
+          <div class="ps-4 pe-4">
+            <label for="exampleInputEmail1" class="form-label">Your Name</label>
+            <input type="text" class="form-control" formControlName="name">
+            <hr />
+          </div>
+          <div class="ps-4 pe-4">
+            <label for="exampleInputEmail1" class="form-label"
+              >Your Email</label
+            >
+            <input type="email" class="form-control" formControlName="email">
+            <hr />
+          </div>
+          <div class="mb-1 ps-4 pe-4">
+            <label for="exampleInputEmail1" class="form-label"
+              >Your Password</label
+            >
+            <input type="password" class="form-control" formControlName="password">
+            <hr />
+          </div>
+          <div class="ps-4 pe-4">
+            <label for="exampleInputEmail1" class="form-label"> Age</label>
+            <input type="text" class="form-control" formControlName="age">
+            <hr />
+          </div>
+          <div class="ps-4 pe-4">
+            <label for="exampleInputEmail1" class="form-label">Role</label>
+            <input type="text" class="form-control" formControlName="role">
+            <hr />
+          </div>
+        </form>
+      </div>
+    </div>
+  </article>
+</section>

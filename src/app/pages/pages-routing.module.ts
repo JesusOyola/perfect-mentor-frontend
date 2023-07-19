@@ -6,6 +6,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { UsersComponent } from './users/users.component';
 import { StadisticsComponent } from './stadistics/stadistics.component';
 import { AuthComponent } from '../shared/auth/auth.component';
+import { ReportsComponent } from './reports/reports.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,11 @@ const routes: Routes = [
   {
     path: RouterPathNames.stadistics,
     component: StadisticsComponent,
+    pathMatch: 'full',
+  },
+  {
+    path: RouterPathNames.reports,
+    component: ReportsComponent,
     pathMatch: 'full',
   },
   {
