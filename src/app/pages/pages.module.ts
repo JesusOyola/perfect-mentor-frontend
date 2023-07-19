@@ -9,6 +9,7 @@ import { StadisticsComponent } from './stadistics/stadistics.component';
 import { ReportsComponent } from './reports/reports.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SharedModule } from '../shared/shared.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -21,6 +22,6 @@ import { SharedModule } from '../shared/shared.module';
     ProfileComponent,
     
   ],
-  imports: [CommonModule, PagesRoutingModule, SharedModule],
+  imports: [CommonModule, PagesRoutingModule, SharedModule, ReactiveFormsModule],
 })
 export class PagesModule {}

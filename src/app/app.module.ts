@@ -7,6 +7,9 @@ import { ToastrModule } from 'ngx-toastr';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+
+import { PagesModule } from './pages/pages.module';
+
 @NgModule({
   declarations: [],
   imports: [
@@ -19,6 +22,7 @@ import { AppComponent } from './app.component';
     }),
     AppRoutingModule,
     HttpClientModule,
+    PagesModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -77,7 +77,7 @@ export class AuthComponent implements OnInit {
         next: (token) => {
           localStorage.setItem('token', token);
           this.toastr.success(
-            `User ${this.accessForm.controls['email'].value} logeado`,
+            `User ${this.accessForm.controls['email'].value} logged`,
             'User logged'
           );
           this.router.navigate(['/profile']);
